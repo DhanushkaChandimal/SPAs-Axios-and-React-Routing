@@ -1,6 +1,13 @@
-const NavBar = () =>{
+import { Link } from 'react-router-dom';
 
-    return <h1>NavBar</h1>
+const NavBar = () => {
+    return (
+        <nav>
+            <h1>JSONPlaceholder Users Application</h1>
+            <Link to="/">Home</Link> | 
+            <Link to="/users"> Users</Link>
+        </nav>
+    );
 }
 
 export default NavBar;

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-function UserTodos() {
+const UserTodos = () => {
     const { userId } = useParams();          // Get the userId from URL parameters
     const [todos, setTodos] = useState([]);   // State to store the user's todos
     const [user, setUser] = useState(null);
