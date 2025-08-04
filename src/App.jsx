@@ -2,11 +2,16 @@
 // Install react-router-dom to handle the navigation and routes by running: npm install react-router-dom
 // Install Axios by running: npm install axios
 import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
 
 function App() {
 
   return (
     <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
   )
 }
