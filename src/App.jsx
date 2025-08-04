@@ -5,6 +5,7 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Users from './components/Users';
+import UserTodos from './components/UserTodos';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/user-todos/:userId" element={<UserTodos />} />
       </Routes>
     </>
   )
